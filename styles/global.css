@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ebe9e6;
+}
+
+.geral{
+    min-height: 100%;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    height: 100px;
+}
+
+#logo_box{
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+#logo_box p{
+    text-align: center;
+    font-size: 20px;
+}
+
+#logo_box img{
+    width: 100px;
+    height: 100px;
+}
+
+#logo_box img:hover{
+    opacity: 0.7;
+}
+
+#menu_header{
+    margin-right: 20px;
+}
+
+#menu_header a{
+    background-color: #048cb3;
+    border: solid 1px black;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: white;
+}
+
+#menu_header a:hover{
+    background-color: white;
+    color: black;
+}
+
+main{
+    min-height:100%;
+}
+
+footer{
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding-top: 0.6rem;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    flex: 1;
+}
+
+
+#redessociais{
+    display: flex;
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+footer .fa{
+    padding: 10px 15px;
+    background-color: gray;
+    border-radius: 50%;
+    color: white;
+    margin: 5px 4px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.fa-linkedin:hover {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram:hover {
+    background: #125688;
+    color: white;
+}
+
+.fa-youtube:hover {
+    background: #bb0000;
+    color: white;
+}
+
+#credits{
+    text-align: right;
+    margin-right: 20px;
+}
+
+#credits p{
+    font-weight: bold;
+}
+
+#credits a{
+    text-decoration: none;
+    color: #399151;
+}
+
+#credits a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+/*
+@media only screen and (max-width:360px) {
+    header{
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    nav a{
+        position: relative;
+        display: inline-block;
+    }
+}
+*/
+@media only screen and (max-width:940px) {
+    nav{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:490px) {
+    header{
+        height: auto;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    nav a{
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width:490px) {
+    header{
+        height: 200px;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    nav a{
+        margin: 20px 0;
+    }
+    footer{
+        height: auto;
+    }
+    #redessociais{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    header{
+        height: 400px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    nav a{
+        margin: 20px 0;
+    }
+}
+    

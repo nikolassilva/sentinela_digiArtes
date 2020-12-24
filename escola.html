@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Escola - Sentinela DigiArtes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/escola.css">
+    </head>
+
+    <body>
+        <header>
+            <div id="logo_box">
+                <a href="index.html"><img src="img/logo.png" id="logo"></a>
+                <p>Sentinela Artes Digitais</p>
+            </div>
+            <nav id="menu_header">
+                <a href="escola.html">Escola</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="metodo.html">Método</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>A Escola</h1>
+            <p>A Sentinela - Escola de Artes Digitais tem o intuito de formar pessoas para o mercado de trabalho
+                de games e arte digital. Ofertamos diversos e inovadores cursos profissionalizantes nessas áreas!
+            </p>
+
+            <div class="boxes">
+                <div class="box">
+                    <img src="img/escola/escola_1.png" alt="Laboratório de informática" onclick="ampliarImagem(0)">
+                    <p>Laboratórios de informática com ar-condicionado e máquinas e softwares de última geração!</p>
+                </div>
+                <div class="box">
+                    <img src="img/escola/escola_2.jpg" alt="Software de modelagem 3D" onclick="ampliarImagem(1)">
+                    <p>Cursos de modelagem 3D utilizando softwares como o Blender, Autodesk Maya e Unity!</p>
+                </div>
+                <div class="box">
+                    <img src="img/escola/escola_3.jpg" alt="Edição de imagem" onclick="ampliarImagem(2)">
+                    <p>Cursos de edição de imagens e vídeos utilizando principalmente o Adobe Photoshop!</p>
+                </div>
+
+                <div id="box_zoom">
+                    <img class="box_content" id="imgZoom">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <ul id="redessociais">
+                <li>
+                    <a href="https://www.linkedin.com/sentineladigiarts" class="fa fa-linkedin" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/sentineladigiarts" class="fa fa-facebook" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/sentineladigiarts" class="fa fa-twitter" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/sentineladigiarts" class="fa fa-instagram" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/sentineladigiarts" class="fa fa-youtube" target="_blank"></a>
+                </li>
+            </ul>
+
+            <div id="credits">
+                <p>Desenvolvido por</p>
+                <a href="https://br.linkedin.com/in/nikolas-gabriel-99087a180" target="_blank">Nikolas Gabriel</a>
+            </div>
+        </footer>
+
+        <script src="js/escola.js"></script>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Contato - Sentinela DigiArtes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/contato.css">
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="logo_box">
+                <a href="index.html"><img src="img/logo.png" id="logo"></a>
+                <p>Sentinela Artes Digitais</p>
+            </div>
+            <nav id="menu_header">
+                <a href="escola.html">Escola</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="metodo.html">Método</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Contato</h1>
+            <div class="content">
+                <div class="img">
+                    <img src="img/contato/escola_1.jpeg" alt="Foto da escola">
+                </div>
+                <div class="info">
+                    <p><span>Telefone fixo: </span>(31) 7070-7070</p>
+                    <p><span>Telefone celular: </span>(31) 8888-8888</p>
+                    <p><span>E-mail: </span>sentinela@contato.com.br</p>
+                    <p><span>Endereço: </span>Rodovia MGC 262 Sobradinho, MG, 34590-390</p>
+                </div>
+                <div class="map">
+                    <div id="location-map" class="leaflet-container leaflet-fade-anim"></div>
+                </div>
+                <div class="form">
+                    <form action="formulario.php">
+                        <div class="form-element">
+                            <label for="nome">Nome: </label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-element">
+                            <label for="email">E-mail: </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-element">
+                            <label for="telefone">Telefone: </label>
+                            <input type="text" id="telefone" name="telefone">
+                        </div>
+                        <div class="form-element">
+                            <label for="msg">Mensagem: </label>
+                            <textarea name="msg" id="msg" required></textarea>
+                        </div>
+                        <div class="button-element">
+                            <button type="submit">Enviar</button>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <ul id="redessociais">
+                <li>
+                    <a href="https://www.linkedin.com/sentineladigiarts" class="fa fa-linkedin" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/sentineladigiarts" class="fa fa-facebook" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/sentineladigiarts" class="fa fa-twitter" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/sentineladigiarts" class="fa fa-instagram" target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/sentineladigiarts" class="fa fa-youtube" target="_blank"></a>
+                </li>
+            </ul>
+
+            <div id="credits">
+                <p>Desenvolvido por</p>
+                <a href="https://br.linkedin.com/in/nikolas-gabriel-99087a180" target="_blank">Nikolas Gabriel</a>
+            </div>
+        </footer>
+        <script src="js/contato.js"></script>
+    </body>
+</html>
